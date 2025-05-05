@@ -32,7 +32,7 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if(collision.GetComponent<Enemy>())
         {
-
+            // Aqui invocaria los metodos de HIT, ya que el HIT tiene que ver con los golpes y este es un triger enter, si entra en la zona del enemigo le hace daño
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IceArrow : Projectile
 {
-    public IceArrow(Sprite sprite) : base(10, 15, Resources.Load<Sprite>("icearrow"))
+    public IceArrow() : base(10, 15, Resources.Load<Sprite>("icearrow"))
     {
 
     }

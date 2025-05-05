@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Arrow : Projectile
 {
-    public Arrow(Sprite sprite) : base(25, 30 , Resources.Load<Sprite>("arrow")) 
+    public Arrow() : base(25, 30 , Resources.Load<Sprite>("arrow")) 
     { 
     
     }
@@ -18,6 +18,3 @@ public class Arrow : Projectile
 
 // LA FLECHA SE INSTANCIA EN EL PLAYER SHOOT
 
-// GameObject arrow = GameObject.Instantiate(sprite, reciver.transform.position, Quaternion.identity);
-// arrow.GetComponent<Projectile>().SetDir(Vector2.up);
-// arrow.GetComponent<Projectile>().speed = speed;

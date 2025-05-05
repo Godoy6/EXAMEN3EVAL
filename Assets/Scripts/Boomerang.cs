@@ -9,7 +9,7 @@ public class Boomerang : Projectile
 
     private Transform returnTransform;
 
-    public Boomerang(Sprite sprite, float timeToReturn): base(8, 10, Resources.Load<Sprite>("boomerang"))
+    public Boomerang(float timeToReturn): base(8, 10, Resources.Load<Sprite>("boomerang"))
     {
         this.timeToReturn = timeToReturn;
     }
