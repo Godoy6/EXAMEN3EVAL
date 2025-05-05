@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+    public ProjectileType ProjectileType;
+    private Projectile Projectile;
+
     public float timeToShoot = 0.4f;
     public GameObject projectile;
 
@@ -27,7 +30,32 @@ public class PlayerShoot : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            ChangeProjectile();
+        }
+    }
 
+    void ChangeProjectile() 
+    {
+        ProjectileType++;
+        if (ProjectileType > ProjectileType.ARROW) 
+        { 
+        
+        }
+    }
+
+    void InstanceProjectile() 
+    {
+        switch (ProjectileType)
+        { 
+            case ProjectileType.ARROW:
+                Projectile = new Arrow();
+                break;
+            case ProjectileType.ICEARROW:
+                Projectile = new IceArrow();
+                break;
+            case ProjectileType.BOOMERANG:
+                Projectile = new Boomerang();
+                break;
         }
     }
 }

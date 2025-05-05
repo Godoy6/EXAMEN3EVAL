@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ProjectileType{ARROW, ICEARROW, BOOMERANG}
+
 public abstract class Projectile
 {
     protected float speed;
