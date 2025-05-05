@@ -10,9 +10,9 @@ public class Arrow : Projectile
     
     }
 
-    public override void Move()
+    public override void Move(Vector2 dir)
     {
-        new Vector2(0, speed);
+        dir = new Vector2(0, speed * Time.deltaTime);
     }
 }
 

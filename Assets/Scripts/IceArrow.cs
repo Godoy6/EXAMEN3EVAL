@@ -9,14 +9,13 @@ public class IceArrow : Projectile
 
     }
 
-    public override void Move()
+    public override void Move(Vector2 dir)
     {
-        transform.Translate(new Vector2(3 * Mathf.Sin(Time.time), 5) * Time.deltaTime);
+        dir = new Vector2(3 * Mathf.Sin(Time.time), 5) * Time.deltaTime;
     }
 
     public override GameObject Hit(GameObject reciver)
     {
-        reciver / 2;
         return reciver;
     }
 }

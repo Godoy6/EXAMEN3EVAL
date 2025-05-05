@@ -18,12 +18,12 @@ public abstract class Projectile
         this.sprite = sprite;
     }
 
-    public Sprite GetSprite() 
+    public Sprite GetSprite()
     { 
         return sprite; 
     }
 
-    public abstract void Move();
+    public abstract void Move(Vector2 dir);
 
     public virtual GameObject Hit(GameObject reciver) 
     {
